@@ -8,7 +8,7 @@ const port = process.env.port || 5000;
 
 app.use(cors());
 app.use(express.json());
-//receiving in json format
+
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 const uri = process.env.ATLAS_URI;
