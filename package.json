@@ -13,6 +13,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "12.18.2"
+  },
   "bugs": {
     "url": "https://github.com/jash139/bookeditor_v2_backend/issues"
   },
