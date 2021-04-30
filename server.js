@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 
 require("dotenv").config();
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
@@ -25,10 +25,10 @@ const userRouter = require("./routes/user");
 
 app.use("/books", bookRouter);
 app.use("/chapter", chapterRouter);
-app.use("/user", userRouter);
+app.use("/users", userRouter);
 
 app.get("/", function (req, res) {
-    res.send("Home page");
+    res.send("Home page bookedv2");
 })
 
 app.listen(port, function () {
