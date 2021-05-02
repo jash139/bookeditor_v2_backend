@@ -24,7 +24,7 @@ const chapterRouter = require("./routes/chapter");
 const userRouter = require("./routes/user");
 
 app.use("/books", bookRouter);
-app.use("/chapter", chapterRouter);
+app.use("/chapters", chapterRouter);
 app.use("/users", userRouter);
 
 app.get("/", function (req, res) {
