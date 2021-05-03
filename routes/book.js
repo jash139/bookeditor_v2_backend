@@ -25,7 +25,7 @@ router.route("/")
         });
 
         newBook.save()
-            .then(() => res.json("Book added!"))
+            .then((response) => res.json(response.data))
             .catch(err => res.status(400).json(err));
     });
 
