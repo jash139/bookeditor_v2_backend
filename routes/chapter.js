@@ -33,4 +33,11 @@ router.route("/:id")
             .catch(err => res.status(400).json("Error: " + err));
     })
 
+router.route("/book/:bookId")
+    .get(function (req, res) {
+        Chapter.find({ "bookId": req.params.bookId })
+            .then(response => res.json(response))
+            .catch(err => res.status(400).json(err));
+    })
+
 module.exports = router;
