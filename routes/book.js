@@ -11,6 +11,8 @@ router.route("/")
 
     .post(function (req, res) {
         const userId = req.body.userId;
+        const userName = req.body.userName;
+        const rating = 10;
         const bookCoverUrl = req.body.bookCoverUrl;
         const title = req.body.title;
         const summary = req.body.summary;
@@ -18,6 +20,8 @@ router.route("/")
 
         const newBook = new Book({
             userId,
+            userName,
+            rating,
             bookCoverUrl,
             title,
             summary,
