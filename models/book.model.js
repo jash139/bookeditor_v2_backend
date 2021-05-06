@@ -4,6 +4,8 @@ const Schema = mongoose.Schema;
 
 const bookSchema = new Schema({
     userId: String,
+    userName: String,
+    rating: Number,
     bookCoverUrl: String,
     title: String,
     summary: String,
